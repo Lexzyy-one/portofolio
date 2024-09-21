@@ -17,7 +17,7 @@ html {
   --bg-color: #080808;
   --second-bg-color: #001005;
   --text-color: white;
-  --main-color: #7354B3;
+  --main-color: #6a0dad;
 }
 body{
   background: var(--bg-color);
