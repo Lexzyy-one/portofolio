@@ -4,7 +4,6 @@
   box-sizing: border-box;
   text-decoration: none;
   border: none;
-  background-color: black;
   outline: none;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
@@ -14,14 +13,13 @@ html {
   overflow-x: hidden;
 }
 :root {
-  --bg-color: #080808;
+  --bg-color: black;
   --second-bg-color: #001005;
   --text-color: white;
   --main-color: #6a0dad;
 }
 body{
   background: var(--bg-color);
-  background: var(--text-color);
 }
 .header{
   position: fixed;
@@ -96,6 +94,7 @@ section{
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.8;
+  color: var(--text-color);
 }
 .home-img img{
   width: 32vw;
@@ -158,4 +157,42 @@ section{
   box-shadow: 0 0 25px var(--main-color);
   background-color: var(--main-color);
   color: black;
+}
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background-color: var(--bg-color);
+}
+.about-img img{
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.4s ease-in-out;
+}
+.about-img img:hover{
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(--main-color),
+              0 0 100px var(--main-color);
+}
+.about-content h2{
+  font-size: 7rem;
+  text-align: left;
+}
+.about-content p{
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+.about-content .btn{
+  margin: 3rem 0;
+}
+::-webkit-scrollbar{
+  width: 20px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+  background-color: var(--bg-color);
 }
